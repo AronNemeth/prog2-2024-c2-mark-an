@@ -31,3 +31,4 @@ if __name__ == "__main__":
         out.append(out_row)
 
     pd.DataFrame(out).to_csv("out.csv", index=False)
+
