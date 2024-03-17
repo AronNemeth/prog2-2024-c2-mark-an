@@ -1,15 +1,10 @@
 import polars as pl
-import pandas as pd
 from flask import Flask
 
 app = Flask(__name__)
 
-# Ez az oszlopok felcserélése miatt van így
-#df = pl.read_csv("input.csv")
-df = pd.read_csv("input.csv")
-damage_types = df["dmg_type"].unique()
-df = pl.from_pandas(df)
-damage_types = pl.DataFrame({"dmg_type": damage_types})
+df = pl.read_csv("input.csv")
+damage_types = df.unique(subset=["dmg_type"])["dmg_type"]
 
 
 @app.route("/ping")
