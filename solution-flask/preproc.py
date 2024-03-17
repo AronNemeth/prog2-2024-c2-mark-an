@@ -14,7 +14,7 @@ def ping():
     out = []
     for row in query_df.iter_rows():
         out_row = {}
-        for dt in damage_types["dmg_type"]:
+        for dt in damage_types:
             sub_df = df.filter(
                 (pl.col("dmg_type") == dt)
                 & (pl.col("dmg") >= row[2])
