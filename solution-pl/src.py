@@ -5,13 +5,12 @@ import polars as pl
 df = pl.read_parquet("input.parquet")
 query_df = pl.read_csv("query.csv")
 
-#damage_types = df.unique(subset=["dmg_type"])["dmg_type"]
-damage_types = pl.read_parquet("damage_types.parquet")
+damage_types = df.unique(subset=["dmg_type"])["dmg_type"]
 
 out = []
 for row in query_df.iter_rows():
     out_row = {}
-    for dt in damage_types["dmg_type"]:
+    for dt in damage_types:
         sub_df = df.filter(
             (pl.col("dmg_type") == dt)
             & (pl.col("dmg") >= row[2])
