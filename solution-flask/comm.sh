@@ -1,9 +1,2 @@
-start cmd /k "python preproc.py"
-
-:wait
-ping -n 1 127.0.0.1 > NUL
-if exist "%ERRORLEVEL%" (
-  goto wait
-)
-
-echo Flask server is ready!
+#! /bin/sh
+screen -dmS flask_server python3 preproc.py; while ! nc -z localhost 5678; do sleep 1; done;
