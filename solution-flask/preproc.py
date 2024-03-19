@@ -8,7 +8,7 @@ damage_types = df.unique(subset=["dmg_type"])["dmg_type"]
 
 
 @app.route("/ping")
-def ping():    
+def ping():
     query_df = pl.read_csv("query.csv")
 
     out = []
