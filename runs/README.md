@@ -1,39 +1,46 @@
-# 2026-10-08
+# 2026-10-09
 
 ## Inputs: 1000, Queries 20
 
 | solution           |   setup_time |   preproc_time |   run_time |
 |:-------------------|-------------:|---------------:|-----------:|
-| solution-flask     |     1.58032  |       1.15303  |   0.108234 |
-| solution-pl        |     0.438097 |       0.168067 |   0.257476 |
-| solution-aron-mark |     6.72863  |       0.286938 |   0.263953 |
-| solution-1-flask   |     0.440628 |       1.0086   |   0.276783 |
-| solution-1         |     8.18398  |       1e-06    |   0.670291 |
-| solution-2         |     0.44608  |       0.694593 |   0.926619 |
+| solution-flask     |     1.01291  |       1.06192  |   0.077033 |
+| solution-1-flask   |     0.338057 |       1.00726  |   0.175943 |
+| solution-aron-mark |     5.43918  |       0.14483  |   0.19161  |
+| solution-pl        |     0.336783 |       0.130767 |   0.198421 |
+| solution-2         |     0.325436 |       0.700545 |   0.72426  |
+| solution-1         |     6.97058  |       1e-06    |   0.846477 |
 
 ## Inputs: 10000, Queries 50
 
 | solution           |   setup_time |   preproc_time |   run_time |
 |:-------------------|-------------:|---------------:|-----------:|
-| solution-flask     |     0.441824 |       1.00895  |   0.245117 |
-| solution-aron-mark |     0.436956 |       0.167805 |   0.401876 |
-| solution-pl        |     0.446756 |       0.169802 |   0.405208 |
-| solution-1-flask   |     0.449008 |       1.00873  |   0.82124  |
-| solution-2         |     0.450004 |       0.594215 |   6.63042  |
+| solution-flask     |     0.334815 |       1.00744  |   0.168043 |
+| solution-pl        |     0.329854 |       0.131766 |   0.287361 |
+| solution-aron-mark |     0.333744 |       0.130513 |   0.290029 |
+| solution-1-flask   |     0.340874 |       1.00742  |   0.527515 |
+| solution-2         |     0.332533 |       0.402519 |   8.60368  |
 
 ## Inputs: 50000, Queries 200
 
 | solution           |   setup_time |   preproc_time |   run_time |
 |:-------------------|-------------:|---------------:|-----------:|
-| solution-flask     |     0.442263 |       1.00896  |    1.03306 |
-| solution-aron-mark |     0.447903 |       0.179219 |    1.19829 |
-| solution-pl        |     0.454333 |       0.178315 |    1.21206 |
-| solution-1-flask   |     0.472502 |       1.00883  |    5.65033 |
+| solution-flask     |     0.331012 |       1.00742  |   0.733735 |
+| solution-aron-mark |     0.329498 |       0.136394 |   0.837707 |
+| solution-pl        |     0.330032 |       0.134176 |   0.901726 |
+| solution-1-flask   |     0.331846 |       1.00742  |   4.18743  |
 
 ## Inputs: 250000, Queries 500
 
 | solution           |   setup_time |   preproc_time |   run_time |
 |:-------------------|-------------:|---------------:|-----------:|
-| solution-aron-mark |     0.443503 |       0.204765 |     3.7618 |
-| solution-pl        |     0.434155 |       0.203914 |     3.8539 |
-| solution-flask     |     0.452251 |       1.00862  |     4.4424 |
+| solution-aron-mark |     0.333538 |       0.157404 |    2.70726 |
+| solution-pl        |     0.328127 |       0.156848 |    2.73132 |
+| solution-flask     |     0.341229 |       1.00824  |    3.24641 |
+
+## Inputs: 1000000, Queries 1000
+
+| solution           |   setup_time |   preproc_time |   run_time |
+|:-------------------|-------------:|---------------:|-----------:|
+| solution-aron-mark |     0.333972 |       0.283141 |    15.8666 |
+| solution-pl        |     0.331654 |       0.221892 |    16.1868 |
